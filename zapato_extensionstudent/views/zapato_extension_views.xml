@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_zapato_form_inherit" model="ir.ui.view">
+        <name>zapato.form.inherit</name>
+        <model>zapato</model>
+        <field name="inherit_id" ref="Modulo_Zapato.view_zapato_form"/>
+        <field name="arch" type="xml">
+            
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="proveedor"/>
+                <field name="descuento"/>
+                <field name="material"/>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
